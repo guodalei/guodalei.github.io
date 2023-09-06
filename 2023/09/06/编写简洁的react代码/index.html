@@ -20,31 +20,33 @@
     var CONFIG = {"hostname":"github.com","root":"/guodalei/guodalei.github.io/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="生命中最困难的，是想清楚你真正想要做的事情，而不是学上一堆假设将来有用的东西。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="小样儿">
-<meta property="og:url" content="https://github.com/guodalei/guodalei.github.io/index.html">
+  <meta name="description" content="条件渲染123456789101112131415161718192021222324252627import React, &amp;#123; useState &amp;#125; from &amp;#x27;react&amp;#x27;&#x2F;&#x2F; 两个条件的条件渲染export const ConditionalRenderingWhenTrueBad &#x3D; () &#x3D;&gt; &amp;#123;	const [showCondit">
+<meta property="og:type" content="article">
+<meta property="og:title" content="编写简洁的react代码">
+<meta property="og:url" content="https://github.com/guodalei/guodalei.github.io/2023/09/06/%E7%BC%96%E5%86%99%E7%AE%80%E6%B4%81%E7%9A%84react%E4%BB%A3%E7%A0%81/index.html">
 <meta property="og:site_name" content="小样儿">
-<meta property="og:description" content="生命中最困难的，是想清楚你真正想要做的事情，而不是学上一堆假设将来有用的东西。">
+<meta property="og:description" content="条件渲染123456789101112131415161718192021222324252627import React, &amp;#123; useState &amp;#125; from &amp;#x27;react&amp;#x27;&#x2F;&#x2F; 两个条件的条件渲染export const ConditionalRenderingWhenTrueBad &#x3D; () &#x3D;&gt; &amp;#123;	const [showCondit">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-09-06T08:45:37.000Z">
+<meta property="article:modified_time" content="2023-09-06T08:48:24.339Z">
 <meta property="article:author" content="guo.net78@gmail.com">
-<meta property="article:tag" content="前端 Vue React 小程序 JavaScript TypeScript css ...">
+<meta property="article:tag" content="react">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://github.com/guodalei/guodalei.github.io/">
+<link rel="canonical" href="https://github.com/guodalei/guodalei.github.io/2023/09/06/%E7%BC%96%E5%86%99%E7%AE%80%E6%B4%81%E7%9A%84react%E4%BB%A3%E7%A0%81/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>小样儿</title>
+  <title>编写简洁的react代码 | 小样儿</title>
   
 
 
@@ -153,77 +155,10 @@
         <div class="content-wrap">
           
 
-          <div class="content index posts-expand">
+          <div class="content post posts-expand">
             
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://github.com/guodalei/guodalei.github.io/2023/09/06/%E7%BC%96%E5%86%99%E7%AE%80%E6%B4%81%E7%9A%84react%E7%BB%84%E4%BB%B6/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/guodalei/guodalei.github.io/images/avatar.gif">
-      <meta itemprop="name" content="guo.net78@gmail.com">
-      <meta itemprop="description" content="生命中最困难的，是想清楚你真正想要做的事情，而不是学上一堆假设将来有用的东西。">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="小样儿">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/guodalei/guodalei.github.io/2023/09/06/%E7%BC%96%E5%86%99%E7%AE%80%E6%B4%81%E7%9A%84react%E7%BB%84%E4%BB%B6/" class="post-title-link" itemprop="url">编写简洁的react组件</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2023-09-06 16:45:50 / 修改时间：16:48:19" itemprop="dateCreated datePublished" datetime="2023-09-06T16:45:50+08:00">2023-09-06</time>
-            </span>
-
-          
-
-        </div>
-      </header>
 
     
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h3 id="避免使用扩展操作符传递-props"><a href="#避免使用扩展操作符传递-props" class="headerlink" title="避免使用扩展操作符传递 props"></a>避免使用扩展操作符传递 props</h3><p>首先，让我们从一个应该避免的反模式开始。除非有明确的理由这样做，否则应该避免在组件树中使用扩展操作符传递 props，比如：{ …props }。</p>
-<p>通过这种方式传递 props 确实可以更快的编写组件。但这也使得我们很难去定位代码中的 bug。会使我们对编写的组件失去信心，会使得我们重构组件变得更加困难，而且可能会导致出现很难排查的 bug。</p>
-<h3 id="将函数参数封装成一个对象"><a href="#将函数参数封装成一个对象" class="headerlink" title="将函数参数封装成一个对象"></a>将函数参数封装成一个对象</h3><figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="keyword">const</span> <span class="title function_">sampleFunction</span> = (<span class="params">&#123; param1, param2, param3 &#125;</span>) =&gt; &#123;</span><br><span class="line">	<span class="variable language_">console</span>.<span class="title function_">log</span>(&#123; param1, param2, param3 &#125;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>以这种方式编写函数签名有几个显著的优点：</p>
-<p>1、 你不用再担心参数传递的顺序。我曾犯过几次因函数传参顺序问题而产生了 bug 的错误。<br>2、 对于配置了智能提示的编辑器（现在的大多数都有），可以很好地完成函数参数的自动填充。</p>
-<h3 id="于事件处理函数，将该处理函数作为函数的返回值"><a href="#于事件处理函数，将该处理函数作为函数的返回值" class="headerlink" title="于事件处理函数，将该处理函数作为函数的返回值"></a>于事件处理函数，将该处理函数作为函数的返回值</h3><figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="title class_">React</span> <span class="keyword">from</span> <span class="string">&#x27;react&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="keyword">function</span> <span class="title function_">SampleComponent</span>(<span class="params">&#123; onValueChange &#125;</span>) &#123;</span><br><span class="line">	<span class="keyword">const</span> <span class="title function_">handleChange</span> = (<span class="params">key</span>) =&gt; &#123;</span><br><span class="line">		<span class="keyword">return</span> <span class="function">(<span class="params">e</span>) =&gt;</span> <span class="title function_">onValueChange</span>(key, e.<span class="property">target</span>.<span class="property">value</span>)</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> (</span><br><span class="line">		<span class="language-xml"><span class="tag">&lt;<span class="name">form</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">			<span class="tag">&lt;<span class="name">input</span> <span class="attr">onChange</span>=<span class="string">&#123;handleChange(</span>&#x27;<span class="attr">name</span>&#x27;)&#125; /&gt;</span></span></span><br><span class="line"><span class="language-xml">			<span class="tag">&lt;<span class="name">input</span> <span class="attr">onChange</span>=<span class="string">&#123;handleChange(</span>&#x27;<span class="attr">email</span>&#x27;)&#125; /&gt;</span></span></span><br><span class="line"><span class="language-xml">			<span class="tag">&lt;<span class="name">input</span> <span class="attr">onChange</span>=<span class="string">&#123;handleChange(</span>&#x27;<span class="attr">phone</span>&#x27;)&#125; /&gt;</span></span></span><br><span class="line"><span class="language-xml">		<span class="tag">&lt;/<span class="name">form</span>&gt;</span></span></span><br><span class="line">	)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="组件渲染使用-map-而非-if-else"><a href="#组件渲染使用-map-而非-if-else" class="headerlink" title="组件渲染使用 map 而非 if&#x2F;else"></a>组件渲染使用 map 而非 if&#x2F;else</h3><figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="title class_">React</span> <span class="keyword">from</span> <span class="string">&#x27;react&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> <span class="title function_">Student</span> = (<span class="params">&#123; name &#125;</span>) =&gt; <span class="language-xml"><span class="tag">&lt;<span class="name">p</span>&gt;</span>Student name: &#123;name&#125;<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span></span><br><span class="line"><span class="keyword">const</span> <span class="title function_">Teacher</span> = (<span class="params">&#123; name &#125;</span>) =&gt; <span class="language-xml"><span class="tag">&lt;<span class="name">p</span>&gt;</span>Teacher name: &#123;name&#125;<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span></span><br><span class="line"><span class="keyword">const</span> <span class="title function_">Guardian</span> = (<span class="params">&#123; name &#125;</span>) =&gt; <span class="language-xml"><span class="tag">&lt;<span class="name">p</span>&gt;</span>Guardian name: &#123;name&#125;<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="keyword">function</span> <span class="title function_">SampleComponent</span>(<span class="params">&#123; user &#125;</span>) &#123;</span><br><span class="line">	<span class="keyword">let</span> <span class="title class_">Component</span> = <span class="title class_">Student</span></span><br><span class="line">	<span class="keyword">if</span> (user.<span class="property">type</span> === <span class="string">&#x27;teacher&#x27;</span>) &#123;</span><br><span class="line">		<span class="title class_">Component</span> = <span class="title class_">Teacher</span></span><br><span class="line">	&#125; <span class="keyword">else</span> <span class="keyword">if</span> (user.<span class="property">type</span> === <span class="string">&#x27;guardian&#x27;</span>) &#123;</span><br><span class="line">		<span class="title class_">Component</span> = <span class="title class_">Guardian</span></span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> (</span><br><span class="line">		<span class="language-xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">			<span class="tag">&lt;<span class="name">Component</span> <span class="attr">name</span>=<span class="string">&#123;user.name&#125;</span> /&gt;</span></span></span><br><span class="line"><span class="language-xml">		<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line">	)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> <span class="variable constant_">COMPONENT_MAP</span> = &#123;</span><br><span class="line">  <span class="attr">student</span>: <span class="title class_">Student</span>,</span><br><span class="line">  <span class="attr">teacher</span>: <span class="title class_">Teacher</span>,</span><br><span class="line">  <span class="attr">guardian</span>: <span class="title class_">Guardian</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="keyword">function</span> <span class="title function_">SampleComponent</span>(<span class="params">&#123; user &#125;</span>) &#123;</span><br><span class="line">  <span class="keyword">const</span> <span class="title class_">Component</span> = <span class="variable constant_">COMPONENT_MAP</span>[user.<span class="property">type</span>]</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> (</span><br><span class="line">    <span class="language-xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">      <span class="tag">&lt;<span class="name">Component</span> <span class="attr">name</span>=<span class="string">&#123;user.name&#125;</span> /&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line">  )</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="Hook组件"><a href="#Hook组件" class="headerlink" title="Hook组件"></a>Hook组件</h3>
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
@@ -239,10 +174,9 @@
       <meta itemprop="name" content="小样儿">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/guodalei/guodalei.github.io/2023/09/06/%E7%BC%96%E5%86%99%E7%AE%80%E6%B4%81%E7%9A%84react%E4%BB%A3%E7%A0%81/" class="post-title-link" itemprop="url">编写简洁的react代码</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          编写简洁的react代码
+        </h1>
 
         <div class="post-meta">
             <span class="post-meta-item">
@@ -266,7 +200,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h3 id="条件渲染"><a href="#条件渲染" class="headerlink" title="条件渲染"></a>条件渲染</h3><figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="title class_">React</span>, &#123; useState &#125; <span class="keyword">from</span> <span class="string">&#x27;react&#x27;</span></span><br><span class="line"><span class="comment">// 两个条件的条件渲染</span></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">const</span> <span class="title function_">ConditionalRenderingWhenTrueBad</span> = (<span class="params"></span>) =&gt; &#123;</span><br><span class="line">	<span class="keyword">const</span> [showConditionalText, setShowConditionalText] = <span class="title function_">useState</span>(<span class="literal">false</span>)</span><br><span class="line"></span><br><span class="line">	<span class="keyword">const</span> <span class="title function_">handleClick</span> = (<span class="params"></span>) =&gt; <span class="title function_">setShowConditionalText</span>(<span class="function">(<span class="params">showConditionalText</span>) =&gt;</span> !showConditionalText)</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> (</span><br><span class="line">		<span class="language-xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">			<span class="tag">&lt;<span class="name">button</span> <span class="attr">onClick</span>=<span class="string">&#123;handleClick&#125;</span>&gt;</span>Toggle the text<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">			&#123;showConditionalText ? <span class="tag">&lt;<span class="name">p</span>&gt;</span>The condition must be true!<span class="tag">&lt;/<span class="name">p</span>&gt;</span> : null&#125;</span></span><br><span class="line"><span class="language-xml">		<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line">	)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 一个条件的条件渲染</span></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">const</span> <span class="title function_">ConditionalRenderingWhenTrueGood</span> = (<span class="params"></span>) =&gt; &#123;</span><br><span class="line">	<span class="keyword">const</span> [showConditionalText, setShowConditionalText] = <span class="title function_">useState</span>(<span class="literal">false</span>)</span><br><span class="line"></span><br><span class="line">	<span class="keyword">const</span> <span class="title function_">handleClick</span> = (<span class="params"></span>) =&gt; <span class="title function_">setShowConditionalText</span>(<span class="function">(<span class="params">showConditionalText</span>) =&gt;</span> !showConditionalText)</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> (</span><br><span class="line">		<span class="language-xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">			<span class="tag">&lt;<span class="name">button</span> <span class="attr">onClick</span>=<span class="string">&#123;handleClick&#125;</span>&gt;</span>Toggle the text<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">			&#123;showConditionalText &amp;&amp; <span class="tag">&lt;<span class="name">p</span>&gt;</span>The condition must be true!<span class="tag">&lt;/<span class="name">p</span>&gt;</span>&#125;</span></span><br><span class="line"><span class="language-xml">		<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line">	)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        <h3 id="条件渲染"><a href="#条件渲染" class="headerlink" title="条件渲染"></a>条件渲染</h3><figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="title class_">React</span>, &#123; useState &#125; <span class="keyword">from</span> <span class="string">&#x27;react&#x27;</span></span><br><span class="line"><span class="comment">// 两个条件的条件渲染</span></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">const</span> <span class="title function_">ConditionalRenderingWhenTrueBad</span> = (<span class="params"></span>) =&gt; &#123;</span><br><span class="line">	<span class="keyword">const</span> [showConditionalText, setShowConditionalText] = <span class="title function_">useState</span>(<span class="literal">false</span>)</span><br><span class="line"></span><br><span class="line">	<span class="keyword">const</span> <span class="title function_">handleClick</span> = (<span class="params"></span>) =&gt; <span class="title function_">setShowConditionalText</span>(<span class="function">(<span class="params">showConditionalText</span>) =&gt;</span> !showConditionalText)</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> (</span><br><span class="line">		<span class="language-xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">			<span class="tag">&lt;<span class="name">button</span> <span class="attr">onClick</span>=<span class="string">&#123;handleClick&#125;</span>&gt;</span>Toggle the text<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">			&#123;showConditionalText ? <span class="tag">&lt;<span class="name">p</span>&gt;</span>The condition must be true!<span class="tag">&lt;/<span class="name">p</span>&gt;</span> : null&#125;</span></span><br><span class="line"><span class="language-xml">		<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line">	)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 一个条件的条件渲染</span></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">const</span> <span class="title function_">ConditionalRenderingWhenTrueGood</span> = (<span class="params"></span>) =&gt; &#123;</span><br><span class="line">	<span class="keyword">const</span> [showConditionalText, setShowConditionalText] = <span class="title function_">useState</span>(<span class="literal">false</span>)</span><br><span class="line"></span><br><span class="line">	<span class="keyword">const</span> <span class="title function_">handleClick</span> = (<span class="params"></span>) =&gt; <span class="title function_">setShowConditionalText</span>(<span class="function">(<span class="params">showConditionalText</span>) =&gt;</span> !showConditionalText)</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> (</span><br><span class="line">		<span class="language-xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">			<span class="tag">&lt;<span class="name">button</span> <span class="attr">onClick</span>=<span class="string">&#123;handleClick&#125;</span>&gt;</span>Toggle the text<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">			&#123;showConditionalText &amp;&amp; <span class="tag">&lt;<span class="name">p</span>&gt;</span>The condition must be true!<span class="tag">&lt;/<span class="name">p</span>&gt;</span>&#125;</span></span><br><span class="line"><span class="language-xml">		<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line">	)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <h3 id="布尔型-props"><a href="#布尔型-props" class="headerlink" title="布尔型 props"></a>布尔型 props</h3><figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 当组件的 prop 为 true 时，只需要提供属性名即可，例如：myTruthyProp，myTruthyProp=&#123;true&#125; 这样的写法是没有必要的。</span></span><br><span class="line"><span class="keyword">import</span> <span class="title class_">React</span> <span class="keyword">from</span> <span class="string">&#x27;react&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> <span class="title function_">HungryMessage</span> = (<span class="params">&#123; isHungry &#125;</span>) =&gt; <span class="language-xml"><span class="tag">&lt;<span class="name">span</span>&gt;</span>&#123;isHungry ? &#x27;I am hungry&#x27; : &#x27;I am full&#x27;&#125;<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">const</span> <span class="title function_">BooleanPropGood</span> = (<span class="params"></span>) =&gt; (</span><br><span class="line">	<span class="language-xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">		<span class="tag">&lt;<span class="name">span</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">			<span class="tag">&lt;<span class="name">b</span>&gt;</span>This person is hungry: <span class="tag">&lt;/<span class="name">b</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">		<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">		<span class="tag">&lt;<span class="name">HungryMessage</span> <span class="attr">isHungry</span> /&gt;</span></span></span><br><span class="line"><span class="language-xml">		<span class="tag">&lt;<span class="name">br</span> /&gt;</span></span></span><br><span class="line"><span class="language-xml">		<span class="tag">&lt;<span class="name">span</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">			<span class="tag">&lt;<span class="name">b</span>&gt;</span>This person is full: <span class="tag">&lt;/<span class="name">b</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">		<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">		<span class="tag">&lt;<span class="name">HungryMessage</span> <span class="attr">isHungry</span>=<span class="string">&#123;false&#125;</span> /&gt;</span></span></span><br><span class="line"><span class="language-xml">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line">)</span><br></pre></td></tr></table></figure>
 
@@ -286,21 +220,33 @@
 <li>使用明确命名的变量</li>
 </ul>
 
-      
     </div>
 
     
     
     
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
+          <div class="post-tags">
+              <a href="/guodalei/guodalei.github.io/tags/react/" rel="tag"># react</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/guodalei/guodalei.github.io/2023/09/06/%E7%BC%96%E5%86%99%E7%AE%80%E6%B4%81%E7%9A%84react%E7%BB%84%E4%BB%B6/" rel="next" title="编写简洁的react组件">
+      编写简洁的react组件 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
       </footer>
+    
   </article>
   
   
-  
-
-
   
 
 
@@ -353,6 +299,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9D%A1%E4%BB%B6%E6%B8%B2%E6%9F%93"><span class="nav-number">1.</span> <span class="nav-text">条件渲染</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B8%83%E5%B0%94%E5%9E%8B-props"><span class="nav-number">2.</span> <span class="nav-text">布尔型 props</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%B2-props"><span class="nav-number">3.</span> <span class="nav-text">字符串 props</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BA%8B%E4%BB%B6%E5%A4%84%E7%90%86%E5%87%BD%E6%95%B0"><span class="nav-number">4.</span> <span class="nav-text">事件处理函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BC%A0%E9%80%92%E7%BB%84%E4%BB%B6%E4%BD%9C%E4%B8%BA-props"><span class="nav-number">5.</span> <span class="nav-text">传递组件作为 props</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9C%AA%E5%AE%9A%E4%B9%89%E7%9A%84-props"><span class="nav-number">6.</span> <span class="nav-text">未定义的 props</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#state-%E8%B5%8B%E5%80%BC%E4%BE%9D%E8%B5%96%E4%BA%8E%E4%B9%8B%E5%89%8D%E7%9A%84-state"><span class="nav-number">7.</span> <span class="nav-text">state 赋值依赖于之前的 state</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B6%E4%BB%96%E5%AE%9E%E8%B7%B5"><span class="nav-number">8.</span> <span class="nav-text">其他实践</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 

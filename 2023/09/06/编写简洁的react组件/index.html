@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/guodalei/guodalei.github.io/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/guodalei/guodalei.github.io/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/guodalei/guodalei.github.io/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/guodalei/guodalei.github.io/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/guodalei/guodalei.github.io/css/main.css">
+
+
+<link rel="stylesheet" href="/guodalei/guodalei.github.io/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"github.com","root":"/guodalei/guodalei.github.io/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="避免使用扩展操作符传递 props首先，让我们从一个应该避免的反模式开始。除非有明确的理由这样做，否则应该避免在组件树中使用扩展操作符传递 props，比如：{ …props }。 通过这种方式传递 props 确实可以更快的编写组件。但这也使得我们很难去定位代码中的 bug。会使我们对编写的组件失去信心，会使得我们重构组件变得更加困难，而且可能会导致出现很难排查的 bug。 将函数参数封装成一个">
+<meta property="og:type" content="article">
+<meta property="og:title" content="编写简洁的react组件">
+<meta property="og:url" content="https://github.com/guodalei/guodalei.github.io/2023/09/06/%E7%BC%96%E5%86%99%E7%AE%80%E6%B4%81%E7%9A%84react%E7%BB%84%E4%BB%B6/index.html">
+<meta property="og:site_name" content="小样儿">
+<meta property="og:description" content="避免使用扩展操作符传递 props首先，让我们从一个应该避免的反模式开始。除非有明确的理由这样做，否则应该避免在组件树中使用扩展操作符传递 props，比如：{ …props }。 通过这种方式传递 props 确实可以更快的编写组件。但这也使得我们很难去定位代码中的 bug。会使我们对编写的组件失去信心，会使得我们重构组件变得更加困难，而且可能会导致出现很难排查的 bug。 将函数参数封装成一个">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-09-06T08:45:50.000Z">
+<meta property="article:modified_time" content="2023-09-06T08:48:19.373Z">
+<meta property="article:author" content="guo.net78@gmail.com">
+<meta property="article:tag" content="react">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://github.com/guodalei/guodalei.github.io/2023/09/06/%E7%BC%96%E5%86%99%E7%AE%80%E6%B4%81%E7%9A%84react%E7%BB%84%E4%BB%B6/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>编写简洁的react组件 | 小样儿</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/guodalei/guodalei.github.io/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">小样儿</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">路漫漫其修远兮，吾将上下而求索</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/guodalei/guodalei.github.io/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/guodalei/guodalei.github.io/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/guodalei/guodalei.github.io/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/guodalei/guodalei.github.io/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://github.com/guodalei/guodalei.github.io/2023/09/06/%E7%BC%96%E5%86%99%E7%AE%80%E6%B4%81%E7%9A%84react%E7%BB%84%E4%BB%B6/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/guodalei/guodalei.github.io/images/avatar.gif">
+      <meta itemprop="name" content="guo.net78@gmail.com">
+      <meta itemprop="description" content="生命中最困难的，是想清楚你真正想要做的事情，而不是学上一堆假设将来有用的东西。">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="小样儿">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          编写简洁的react组件
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2023-09-06 16:45:50 / 修改时间：16:48:19" itemprop="dateCreated datePublished" datetime="2023-09-06T16:45:50+08:00">2023-09-06</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h3 id="避免使用扩展操作符传递-props"><a href="#避免使用扩展操作符传递-props" class="headerlink" title="避免使用扩展操作符传递 props"></a>避免使用扩展操作符传递 props</h3><p>首先，让我们从一个应该避免的反模式开始。除非有明确的理由这样做，否则应该避免在组件树中使用扩展操作符传递 props，比如：{ …props }。</p>
+<p>通过这种方式传递 props 确实可以更快的编写组件。但这也使得我们很难去定位代码中的 bug。会使我们对编写的组件失去信心，会使得我们重构组件变得更加困难，而且可能会导致出现很难排查的 bug。</p>
+<h3 id="将函数参数封装成一个对象"><a href="#将函数参数封装成一个对象" class="headerlink" title="将函数参数封装成一个对象"></a>将函数参数封装成一个对象</h3><figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="keyword">const</span> <span class="title function_">sampleFunction</span> = (<span class="params">&#123; param1, param2, param3 &#125;</span>) =&gt; &#123;</span><br><span class="line">	<span class="variable language_">console</span>.<span class="title function_">log</span>(&#123; param1, param2, param3 &#125;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>以这种方式编写函数签名有几个显著的优点：</p>
+<p>1、 你不用再担心参数传递的顺序。我曾犯过几次因函数传参顺序问题而产生了 bug 的错误。<br>2、 对于配置了智能提示的编辑器（现在的大多数都有），可以很好地完成函数参数的自动填充。</p>
+<h3 id="于事件处理函数，将该处理函数作为函数的返回值"><a href="#于事件处理函数，将该处理函数作为函数的返回值" class="headerlink" title="于事件处理函数，将该处理函数作为函数的返回值"></a>于事件处理函数，将该处理函数作为函数的返回值</h3><figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="title class_">React</span> <span class="keyword">from</span> <span class="string">&#x27;react&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="keyword">function</span> <span class="title function_">SampleComponent</span>(<span class="params">&#123; onValueChange &#125;</span>) &#123;</span><br><span class="line">	<span class="keyword">const</span> <span class="title function_">handleChange</span> = (<span class="params">key</span>) =&gt; &#123;</span><br><span class="line">		<span class="keyword">return</span> <span class="function">(<span class="params">e</span>) =&gt;</span> <span class="title function_">onValueChange</span>(key, e.<span class="property">target</span>.<span class="property">value</span>)</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> (</span><br><span class="line">		<span class="language-xml"><span class="tag">&lt;<span class="name">form</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">			<span class="tag">&lt;<span class="name">input</span> <span class="attr">onChange</span>=<span class="string">&#123;handleChange(</span>&#x27;<span class="attr">name</span>&#x27;)&#125; /&gt;</span></span></span><br><span class="line"><span class="language-xml">			<span class="tag">&lt;<span class="name">input</span> <span class="attr">onChange</span>=<span class="string">&#123;handleChange(</span>&#x27;<span class="attr">email</span>&#x27;)&#125; /&gt;</span></span></span><br><span class="line"><span class="language-xml">			<span class="tag">&lt;<span class="name">input</span> <span class="attr">onChange</span>=<span class="string">&#123;handleChange(</span>&#x27;<span class="attr">phone</span>&#x27;)&#125; /&gt;</span></span></span><br><span class="line"><span class="language-xml">		<span class="tag">&lt;/<span class="name">form</span>&gt;</span></span></span><br><span class="line">	)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="组件渲染使用-map-而非-if-else"><a href="#组件渲染使用-map-而非-if-else" class="headerlink" title="组件渲染使用 map 而非 if&#x2F;else"></a>组件渲染使用 map 而非 if&#x2F;else</h3><figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="title class_">React</span> <span class="keyword">from</span> <span class="string">&#x27;react&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> <span class="title function_">Student</span> = (<span class="params">&#123; name &#125;</span>) =&gt; <span class="language-xml"><span class="tag">&lt;<span class="name">p</span>&gt;</span>Student name: &#123;name&#125;<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span></span><br><span class="line"><span class="keyword">const</span> <span class="title function_">Teacher</span> = (<span class="params">&#123; name &#125;</span>) =&gt; <span class="language-xml"><span class="tag">&lt;<span class="name">p</span>&gt;</span>Teacher name: &#123;name&#125;<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span></span><br><span class="line"><span class="keyword">const</span> <span class="title function_">Guardian</span> = (<span class="params">&#123; name &#125;</span>) =&gt; <span class="language-xml"><span class="tag">&lt;<span class="name">p</span>&gt;</span>Guardian name: &#123;name&#125;<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="keyword">function</span> <span class="title function_">SampleComponent</span>(<span class="params">&#123; user &#125;</span>) &#123;</span><br><span class="line">	<span class="keyword">let</span> <span class="title class_">Component</span> = <span class="title class_">Student</span></span><br><span class="line">	<span class="keyword">if</span> (user.<span class="property">type</span> === <span class="string">&#x27;teacher&#x27;</span>) &#123;</span><br><span class="line">		<span class="title class_">Component</span> = <span class="title class_">Teacher</span></span><br><span class="line">	&#125; <span class="keyword">else</span> <span class="keyword">if</span> (user.<span class="property">type</span> === <span class="string">&#x27;guardian&#x27;</span>) &#123;</span><br><span class="line">		<span class="title class_">Component</span> = <span class="title class_">Guardian</span></span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> (</span><br><span class="line">		<span class="language-xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">			<span class="tag">&lt;<span class="name">Component</span> <span class="attr">name</span>=<span class="string">&#123;user.name&#125;</span> /&gt;</span></span></span><br><span class="line"><span class="language-xml">		<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line">	)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> <span class="variable constant_">COMPONENT_MAP</span> = &#123;</span><br><span class="line">  <span class="attr">student</span>: <span class="title class_">Student</span>,</span><br><span class="line">  <span class="attr">teacher</span>: <span class="title class_">Teacher</span>,</span><br><span class="line">  <span class="attr">guardian</span>: <span class="title class_">Guardian</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="keyword">function</span> <span class="title function_">SampleComponent</span>(<span class="params">&#123; user &#125;</span>) &#123;</span><br><span class="line">  <span class="keyword">const</span> <span class="title class_">Component</span> = <span class="variable constant_">COMPONENT_MAP</span>[user.<span class="property">type</span>]</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> (</span><br><span class="line">    <span class="language-xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">      <span class="tag">&lt;<span class="name">Component</span> <span class="attr">name</span>=<span class="string">&#123;user.name&#125;</span> /&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line">  )</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="Hook组件"><a href="#Hook组件" class="headerlink" title="Hook组件"></a>Hook组件</h3>
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/guodalei/guodalei.github.io/tags/react/" rel="tag"># react</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/guodalei/guodalei.github.io/2023/09/06/%E7%BC%96%E5%86%99%E7%AE%80%E6%B4%81%E7%9A%84react%E4%BB%A3%E7%A0%81/" rel="prev" title="编写简洁的react代码">
+      <i class="fa fa-chevron-left"></i> 编写简洁的react代码
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%81%BF%E5%85%8D%E4%BD%BF%E7%94%A8%E6%89%A9%E5%B1%95%E6%93%8D%E4%BD%9C%E7%AC%A6%E4%BC%A0%E9%80%92-props"><span class="nav-number">1.</span> <span class="nav-text">避免使用扩展操作符传递 props</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B0%86%E5%87%BD%E6%95%B0%E5%8F%82%E6%95%B0%E5%B0%81%E8%A3%85%E6%88%90%E4%B8%80%E4%B8%AA%E5%AF%B9%E8%B1%A1"><span class="nav-number">2.</span> <span class="nav-text">将函数参数封装成一个对象</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BA%8E%E4%BA%8B%E4%BB%B6%E5%A4%84%E7%90%86%E5%87%BD%E6%95%B0%EF%BC%8C%E5%B0%86%E8%AF%A5%E5%A4%84%E7%90%86%E5%87%BD%E6%95%B0%E4%BD%9C%E4%B8%BA%E5%87%BD%E6%95%B0%E7%9A%84%E8%BF%94%E5%9B%9E%E5%80%BC"><span class="nav-number">3.</span> <span class="nav-text">于事件处理函数，将该处理函数作为函数的返回值</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BB%84%E4%BB%B6%E6%B8%B2%E6%9F%93%E4%BD%BF%E7%94%A8-map-%E8%80%8C%E9%9D%9E-if-else"><span class="nav-number">4.</span> <span class="nav-text">组件渲染使用 map 而非 if&#x2F;else</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Hook%E7%BB%84%E4%BB%B6"><span class="nav-number">5.</span> <span class="nav-text">Hook组件</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">guo.net78@gmail.com</p>
+  <div class="site-description" itemprop="description">生命中最困难的，是想清楚你真正想要做的事情，而不是学上一堆假设将来有用的东西。</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/guodalei/guodalei.github.io/archives/">
+        
+          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">guo.net78@gmail.com</span>
+</div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/guodalei/guodalei.github.io/lib/anime.min.js"></script>
+  <script src="/guodalei/guodalei.github.io/lib/velocity/velocity.min.js"></script>
+  <script src="/guodalei/guodalei.github.io/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/guodalei/guodalei.github.io/js/utils.js"></script>
+
+<script src="/guodalei/guodalei.github.io/js/motion.js"></script>
+
+
+<script src="/guodalei/guodalei.github.io/js/schemes/pisces.js"></script>
+
+
+<script src="/guodalei/guodalei.github.io/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
