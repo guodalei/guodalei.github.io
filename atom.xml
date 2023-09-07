@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>小样儿</title>
+  
+  <subtitle>路漫漫其修远兮，吾将上下而求索</subtitle>
+  <link href="https://guodalei.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://guodalei.github.io/"/>
+  <updated>2023-09-06T12:33:31.306Z</updated>
+  <id>https://guodalei.github.io/</id>
+  
+  <author>
+    <name>guo.net78</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>批量更新减少渲染次数</title>
+    <link href="https://guodalei.github.io/undefined/"/>
+    <id>https://guodalei.github.io/undefined/</id>
+    <published>2023-09-06T12:31:17.000Z</published>
+    <updated>2023-09-06T12:33:31.306Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h3&gt;&lt;p&gt;React 18 增加了一个新的优化特性，在代码中无需手动处理，就可以支持更多场景下的批量更新</summary>
+        
+      
+    
+    
+    
+    
+    <category term="react" scheme="https://guodalei.github.io/tags/react/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>编写简洁的react组件</title>
+    <link href="https://guodalei.github.io/15145/"/>
+    <id>https://guodalei.github.io/15145/</id>
+    <published>2023-09-06T08:45:50.000Z</published>
+    <updated>2023-09-07T10:39:09.606Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;避免使用扩展操作符传递-props&quot;&gt;&lt;a href=&quot;#避免使用扩展操作符传递-props&quot; class=&quot;headerlink&quot; title=&quot;避免使用扩展操作符传递 props&quot;&gt;&lt;/a&gt;避免使用扩展操作符传递</summary>
+        
+      
+    
+    
+    
+    <category term="前端" scheme="https://guodalei.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="react" scheme="https://guodalei.github.io/tags/react/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>编写简洁的react代码</title>
+    <link href="https://guodalei.github.io/39576/"/>
+    <id>https://guodalei.github.io/39576/</id>
+    <published>2023-09-06T08:45:37.000Z</published>
+    <updated>2023-09-07T10:39:09.604Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;条件渲染&quot;&gt;&lt;a href=&quot;#条件渲染&quot; class=&quot;headerlink&quot; title=&quot;条件渲染&quot;&gt;&lt;/a&gt;条件渲染&lt;/h3&gt;&lt;figure class=&quot;highlight jsx&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td</summary>
+        
+      
+    
+    
+    
+    <category term="前端" scheme="https://guodalei.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="react" scheme="https://guodalei.github.io/tags/react/"/>
+    
+  </entry>
+  
+</feed>
