@@ -6,7 +6,7 @@
   <link href="https://guodalei.github.io/atom.xml" rel="self"/>
   
   <link href="https://guodalei.github.io/"/>
-  <updated>2023-09-07T12:34:51.188Z</updated>
+  <updated>2023-09-11T01:43:44.560Z</updated>
   <id>https://guodalei.github.io/</id>
   
   <author>
@@ -17,22 +17,244 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>css基础知识</title>
+    <link href="https://guodalei.github.io/posts/21495/"/>
+    <id>https://guodalei.github.io/posts/21495/</id>
+    <published>2023-09-10T15:56:50.000Z</published>
+    <updated>2023-09-11T01:43:44.560Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;对盒子模型的理解？&quot;&gt;&lt;a href=&quot;#对盒子模型的理解？&quot; class=&quot;headerlink&quot; title=&quot;对盒子模型的理解？&quot;&gt;&lt;/a&gt;对盒子模型的理解？&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;对文档进行布局的时候，浏览器的渲染引擎会根据标准之一的css基础盒模型，将所有的元素表示为一个一个矩形的盒子。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;标准盒模型: 盒子总宽度 &amp;#x3D; width + padding + border + margin&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;怪异盒模型: 盒子总宽度 &amp;#x3D; width + margin&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Box-sizing: content-box|border-box|inherit;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    
+    <category term="css" scheme="https://guodalei.github.io/tags/css/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>css-flex</title>
+    <link href="https://guodalei.github.io/posts/6230/"/>
+    <id>https://guodalei.github.io/posts/6230/</id>
+    <published>2023-09-10T15:55:38.000Z</published>
+    <updated>2023-09-11T01:43:44.560Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;定义flex容器极其容器的属性&quot;&gt;&lt;a href=&quot;#定义flex容器极其容器的属性&quot; class=&quot;headerlink&quot; title=&quot;定义flex容器极其容器的属性&quot;&gt;&lt;/a&gt;定义flex容器极其容器的属性&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;定义&lt;em&gt;flex&lt;/em&gt;容器&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight css&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;selector-class&quot;&gt;.container&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;attribute&quot;&gt;display&lt;/span&gt;: flex | inline-flex;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h3 id=&quot;flex-direction&quot;&gt;&lt;a href=&quot;#flex-direction&quot; class=&quot;headerlink&quot; title=&quot;flex-direction&quot;&gt;&lt;/a&gt;flex-direction&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;决定主轴方向&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight css&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;selector-class&quot;&gt;.container&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;attribute&quot;&gt;flex-direction&lt;/span&gt;: row | row-reverse | column | column-reverse;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    
+    <category term="css" scheme="https://guodalei.github.io/tags/css/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>css position定位?</title>
+    <link href="https://guodalei.github.io/posts/43814/"/>
+    <id>https://guodalei.github.io/posts/43814/</id>
+    <published>2023-09-10T15:53:52.000Z</published>
+    <updated>2023-09-11T01:43:44.560Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;position&quot;&gt;&lt;a href=&quot;#position&quot; class=&quot;headerlink&quot; title=&quot;position&quot;&gt;&lt;/a&gt;position&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;static:元素根据文档的正常流程进行定位。top, right, bottom,left和z-index属性无效。这是默认值。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;relative:元素根据文档的正常流程进行定位，然后根据top等值相对于自身进行偏移。偏移量不影响任何其他元素的位置。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;absolute:该元素会从正常的文档流中移除，并且不会在页面布局中为该元素创建空间。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    
+    <category term="css" scheme="https://guodalei.github.io/tags/css/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>排序算法</title>
+    <link href="https://guodalei.github.io/posts/61237/"/>
+    <id>https://guodalei.github.io/posts/61237/</id>
+    <published>2023-09-10T15:49:44.000Z</published>
+    <updated>2023-09-11T01:43:44.576Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;深度优先VS广度优先&quot;&gt;&lt;a href=&quot;#深度优先VS广度优先&quot; class=&quot;headerlink&quot; title=&quot;深度优先VS广度优先&quot;&gt;&lt;/a&gt;深度优先VS广度优先&lt;/h3&gt;&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;36&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;37&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;38&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;39&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;40&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;41&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;42&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;43&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;44&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;45&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;46&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;47&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;48&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;49&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;50&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;51&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;52&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;53&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;54&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;55&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;56&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;57&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;58&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;59&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;60&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;61&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;62&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;63&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;64&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;65&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;66&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;67&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;68&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;69&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;70&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;71&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;72&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;73&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;74&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;75&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;76&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;77&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;const&lt;/span&gt; arrTree = [&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;attr&quot;&gt;label&lt;/span&gt;: &lt;span class=&quot;string&quot;&gt;&amp;#x27;1&amp;#x27;&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;attr&quot;&gt;children&lt;/span&gt;: [&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                &lt;span class=&quot;attr&quot;&gt;label&lt;/span&gt;: &lt;span class=&quot;string&quot;&gt;&amp;#x27;1-1&amp;#x27;&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                &lt;span class=&quot;attr&quot;&gt;children&lt;/span&gt;: [&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                    &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                        &lt;span class=&quot;attr&quot;&gt;label&lt;/span&gt;: &lt;span class=&quot;string&quot;&gt;&amp;#x27;1-1-1&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                ]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &amp;#125;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                &lt;span class=&quot;attr&quot;&gt;label&lt;/span&gt;: &lt;span class=&quot;string&quot;&gt;&amp;#x27;1-2&amp;#x27;&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                &lt;span class=&quot;attr&quot;&gt;children&lt;/span&gt;: [&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                    &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                        &lt;span class=&quot;attr&quot;&gt;label&lt;/span&gt;: &lt;span class=&quot;string&quot;&gt;&amp;#x27;1-2-1&amp;#x27;&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                        &lt;span class=&quot;attr&quot;&gt;children&lt;/span&gt;: [&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                            &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                                &lt;span class=&quot;attr&quot;&gt;label&lt;/span&gt;: &lt;span class=&quot;string&quot;&gt;&amp;#x27;1-2-1-1&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                            &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                        ]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                    &amp;#125;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                    &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                        &lt;span class=&quot;attr&quot;&gt;label&lt;/span&gt;: &lt;span class=&quot;string&quot;&gt;&amp;#x27;1-2-2&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                ]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        ]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// 堆栈实现深度优先遍历&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;title function_&quot;&gt;dfs1&lt;/span&gt; = arr =&amp;gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;const&lt;/span&gt; newArr = [...arr]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;const&lt;/span&gt; result = []&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;while&lt;/span&gt; (newArr.&lt;span class=&quot;property&quot;&gt;length&lt;/span&gt;) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;const&lt;/span&gt; item = newArr.&lt;span class=&quot;title function_&quot;&gt;shift&lt;/span&gt;()&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        result.&lt;span class=&quot;title function_&quot;&gt;push&lt;/span&gt;(item.&lt;span class=&quot;property&quot;&gt;label&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (&lt;span class=&quot;keyword&quot;&gt;typeof&lt;/span&gt; item.&lt;span class=&quot;property&quot;&gt;children&lt;/span&gt; !== &lt;span class=&quot;string&quot;&gt;&amp;#x27;object&amp;#x27;&lt;/span&gt;) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &lt;span class=&quot;keyword&quot;&gt;continue&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; (&lt;span class=&quot;keyword&quot;&gt;let&lt;/span&gt; i = item.&lt;span class=&quot;property&quot;&gt;children&lt;/span&gt;.&lt;span class=&quot;property&quot;&gt;length&lt;/span&gt; - &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;; i &amp;gt;= &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;; i--) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            newArr.&lt;span class=&quot;title function_&quot;&gt;unshift&lt;/span&gt;(item.&lt;span class=&quot;property&quot;&gt;children&lt;/span&gt;[i])&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; result&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// 递归实现深度优先遍历&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;title function_&quot;&gt;dfs2&lt;/span&gt; = arr =&amp;gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;const&lt;/span&gt; newArr = [...arr]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;const&lt;/span&gt; result = []&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    newArr.&lt;span class=&quot;title function_&quot;&gt;forEach&lt;/span&gt;(&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;params&quot;&gt;item&lt;/span&gt; =&amp;gt;&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;title function_&quot;&gt;map&lt;/span&gt; = data =&amp;gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            result.&lt;span class=&quot;title function_&quot;&gt;push&lt;/span&gt;(data.&lt;span class=&quot;property&quot;&gt;label&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            data.&lt;span class=&quot;property&quot;&gt;children&lt;/span&gt; &amp;amp;&amp;amp; data.&lt;span class=&quot;property&quot;&gt;children&lt;/span&gt;.&lt;span class=&quot;title function_&quot;&gt;forEach&lt;/span&gt;(&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;params&quot;&gt;item&lt;/span&gt; =&amp;gt;&lt;/span&gt; &lt;span class=&quot;title function_&quot;&gt;map&lt;/span&gt;(item))&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;title function_&quot;&gt;map&lt;/span&gt;(item)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; result&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// 队列实现广度优先遍历&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;title function_&quot;&gt;bfs1&lt;/span&gt; = arr =&amp;gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;const&lt;/span&gt; newArr = [...arr]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;const&lt;/span&gt; result = []&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;while&lt;/span&gt; (newArr.&lt;span class=&quot;property&quot;&gt;length&lt;/span&gt;) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        [...newArr].&lt;span class=&quot;title function_&quot;&gt;forEach&lt;/span&gt;(&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;params&quot;&gt;item&lt;/span&gt; =&amp;gt;&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            newArr.&lt;span class=&quot;title function_&quot;&gt;shift&lt;/span&gt;()&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            result.&lt;span class=&quot;title function_&quot;&gt;push&lt;/span&gt;(item.&lt;span class=&quot;property&quot;&gt;label&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            item.&lt;span class=&quot;property&quot;&gt;children&lt;/span&gt; &amp;amp;&amp;amp; (newArr.&lt;span class=&quot;title function_&quot;&gt;push&lt;/span&gt;(...item.&lt;span class=&quot;property&quot;&gt;children&lt;/span&gt;))&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; result&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;variable language_&quot;&gt;console&lt;/span&gt;.&lt;span class=&quot;title function_&quot;&gt;log&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&amp;#x27;深度优先遍历1&amp;#x27;&lt;/span&gt;, &lt;span class=&quot;title function_&quot;&gt;dfs1&lt;/span&gt;(arrTree))&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;variable language_&quot;&gt;console&lt;/span&gt;.&lt;span class=&quot;title function_&quot;&gt;log&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&amp;#x27;深度优先遍历2&amp;#x27;&lt;/span&gt;, &lt;span class=&quot;title function_&quot;&gt;dfs2&lt;/span&gt;(arrTree))&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;variable language_&quot;&gt;console&lt;/span&gt;.&lt;span class=&quot;title function_&quot;&gt;log&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&amp;#x27;广度优先遍历1&amp;#x27;&lt;/span&gt;, &lt;span class=&quot;title function_&quot;&gt;bfs1&lt;/span&gt;(arrTree))&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    
+    <category term="算法" scheme="https://guodalei.github.io/tags/%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>设计模式</title>
+    <link href="https://guodalei.github.io/posts/41682/"/>
+    <id>https://guodalei.github.io/posts/41682/</id>
+    <published>2023-09-10T15:46:46.000Z</published>
+    <updated>2023-09-11T01:43:44.576Z</updated>
+    
+    
+    <summary type="html">&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;35&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// 职责链模式&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// 单例模式 增加标记&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;title function_&quot;&gt;classList&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;argument&lt;/span&gt;) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (classList.&lt;span class=&quot;property&quot;&gt;instance&lt;/span&gt;) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; classList.&lt;span class=&quot;property&quot;&gt;instance&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125; &lt;span class=&quot;keyword&quot;&gt;else&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        classList.&lt;span class=&quot;property&quot;&gt;instance&lt;/span&gt; = &lt;span class=&quot;variable language_&quot;&gt;this&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;classList.&lt;span class=&quot;property&quot;&gt;instance&lt;/span&gt; = &lt;span class=&quot;literal&quot;&gt;null&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;title function_&quot;&gt;install&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;&lt;/span&gt;) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (install.&lt;span class=&quot;property&quot;&gt;installed&lt;/span&gt; &amp;amp;&amp;amp; _vue === vue) &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;// 註冊&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    install.&lt;span class=&quot;property&quot;&gt;installed&lt;/span&gt; = &lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//  装饰者模式&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;let&lt;/span&gt; arrayProto = &lt;span class=&quot;title class_&quot;&gt;Array&lt;/span&gt;.&lt;span class=&quot;property&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;prototype&lt;/span&gt;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;let&lt;/span&gt; arrayMethonds = &lt;span class=&quot;title class_&quot;&gt;Object&lt;/span&gt;.&lt;span class=&quot;title function_&quot;&gt;create&lt;/span&gt;(arrayProto)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;let&lt;/span&gt; arr = [&lt;span class=&quot;string&quot;&gt;&amp;#x27;push&amp;#x27;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&amp;#x27;pop&amp;#x27;&lt;/span&gt;]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;arr.&lt;span class=&quot;title function_&quot;&gt;forEach&lt;/span&gt;(&lt;span class=&quot;function&quot;&gt;(&lt;span class=&quot;params&quot;&gt;methond&lt;/span&gt;) =&amp;gt;&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    arrayMethonds[methond] = &lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;&lt;/span&gt;) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;let&lt;/span&gt; original = arrayProto[methond];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;let&lt;/span&gt; result = original.&lt;span class=&quot;title function_&quot;&gt;apply&lt;/span&gt;(&lt;span class=&quot;variable language_&quot;&gt;this&lt;/span&gt;, &lt;span class=&quot;variable language_&quot;&gt;arguments&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        dep.&lt;span class=&quot;title function_&quot;&gt;notify&lt;/span&gt;();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; result;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// 策略模式 策略对象key-value的形式&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// 状态模式 复合判断 带状态管理的策略模式&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    
+    <category term="设计模式" scheme="https://guodalei.github.io/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>执行上下文与闭包</title>
+    <link href="https://guodalei.github.io/posts/13524/"/>
+    <id>https://guodalei.github.io/posts/13524/</id>
+    <published>2023-09-10T15:44:57.000Z</published>
+    <updated>2023-09-11T01:43:44.576Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;什么是执行上下文？&quot;&gt;&lt;a href=&quot;#什么是执行上下文？&quot; class=&quot;headerlink&quot; title=&quot;什么是执行上下文？&quot;&gt;&lt;/a&gt;什么是执行上下文？&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;评估和执行代码的环境的抽象概念&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;JavaScript中的几种执行上下文&quot;&gt;&lt;a href=&quot;#JavaScript中的几种执行上下文&quot; class=&quot;headerlink&quot; title=&quot;JavaScript中的几种执行上下文&quot;&gt;&lt;/a&gt;JavaScript中的几种执行上下文&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;全局执行执行上下文&lt;br&gt;创建一个全局的window对象，并设置this等于这个全局对象，一个程序只有一个全局执行上下文。&lt;/li&gt;
+&lt;li&gt;函数执行上下文&lt;br&gt;每当一个函数被调用时，都会为该函数创建一个执行上下文。&lt;/li&gt;
+&lt;li&gt;eval执行上文&lt;br&gt;执行在eval函数内部的代码时也会有属于他自己的执行上下。&lt;/li&gt;
+&lt;/ol&gt;</summary>
+    
+    
+    
+    
+    <category term="JS" scheme="https://guodalei.github.io/tags/JS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ES6相关</title>
+    <link href="https://guodalei.github.io/posts/49273/"/>
+    <id>https://guodalei.github.io/posts/49273/</id>
+    <published>2023-09-10T15:43:58.000Z</published>
+    <updated>2023-09-11T01:43:44.560Z</updated>
+    
+    
+    <summary type="html">&lt;h4 id=&quot;let-const-用于申明常量&quot;&gt;&lt;a href=&quot;#let-const-用于申明常量&quot; class=&quot;headerlink&quot; title=&quot;let - const(用于申明常量 )&quot;&gt;&lt;/a&gt;let - const(用于申明常量 )&lt;/h4&gt;&lt;ol&gt;
+&lt;li&gt;let申明变量且变量不能重复申明const申明常量且不可修改&lt;/li&gt;
+&lt;li&gt;快级作用域&lt;/li&gt;
+&lt;li&gt;不存在变量提升&lt;/li&gt;
+&lt;li&gt;不影响作用域链&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&quot;解构赋值-let-xxx&quot;&gt;&lt;a href=&quot;#解构赋值-let-xxx&quot; class=&quot;headerlink&quot; title=&quot;解构赋值 let {} &amp;#x3D; xxx&quot;&gt;&lt;/a&gt;解构赋值 let {} &amp;#x3D; xxx&lt;/h4&gt;&lt;ol&gt;
+&lt;li&gt;左右结构形同&lt;/li&gt;
+&lt;/ol&gt;</summary>
+    
+    
+    
+    
+    <category term="ES6" scheme="https://guodalei.github.io/tags/ES6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>new操作符实现</title>
+    <link href="https://guodalei.github.io/posts/53702/"/>
+    <id>https://guodalei.github.io/posts/53702/</id>
+    <published>2023-09-10T15:42:07.000Z</published>
+    <updated>2023-09-11T01:43:44.560Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;new-做了什么？代码如何实现&quot;&gt;&lt;a href=&quot;#new-做了什么？代码如何实现&quot; class=&quot;headerlink&quot; title=&quot;new 做了什么？代码如何实现?&quot;&gt;&lt;/a&gt;new 做了什么？代码如何实现?&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;创建一个新对象&lt;/li&gt;
+&lt;li&gt;设置新对象的原型为构造函数的prototype所指的对象&lt;/li&gt;
+&lt;li&gt;设置构造函数的this指向这个对象，执行构造函数（为这个对象添加属性）&lt;/li&gt;
+&lt;li&gt;判断返回值类型返回新对象或引用类型的对象&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    
+    <category term="JS" scheme="https://guodalei.github.io/tags/JS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>promise 实现</title>
+    <link href="https://guodalei.github.io/posts/46982/"/>
+    <id>https://guodalei.github.io/posts/46982/</id>
+    <published>2023-09-10T15:39:04.000Z</published>
+    <updated>2023-09-11T01:43:44.560Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;Promise的概念对于初学者来说一直很抽象，我们可以举个例子：比如你是个经销商，你要去工厂订货，拿到货后你才能自己销售。那么你和工厂之前立下一个契约，保证工厂在在完成生产后通知你，或者就算是因某种原因出错了而无法生产也会通知到你。那么此时这里的契约就相当于我们要讲述的promise，promise就像是个特殊的对象，连接了工厂的生产行为和你的消费行为，是生产者和消费者间的纽带。&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    
+    <category term="ES6" scheme="https://guodalei.github.io/tags/ES6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>this相关</title>
+    <link href="https://guodalei.github.io/posts/49260/"/>
+    <id>https://guodalei.github.io/posts/49260/</id>
+    <published>2023-09-10T15:29:51.000Z</published>
+    <updated>2023-09-11T01:43:44.560Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;全局执行上下文&quot;&gt;&lt;a href=&quot;#全局执行上下文&quot; class=&quot;headerlink&quot; title=&quot;全局执行上下文&quot;&gt;&lt;/a&gt;全局执行上下文&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;非严格模式和严格模式中this都是指向顶层对象，浏览器中即为&lt;em&gt;window&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;函数执行上下文&quot;&gt;&lt;a href=&quot;#函数执行上下文&quot; class=&quot;headerlink&quot; title=&quot;函数执行上下文&quot;&gt;&lt;/a&gt;函数执行上下文&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;严格模式中，普通函数的this的表现不同，表现为&lt;em&gt;undefined&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;如果调用者函数，被某一个对象所拥有，那么该函数在调用时，内部的this指向该对象。如果函数独立调用，那么该函数内部的this，则指向&lt;em&gt;undefined&lt;/em&gt;。但是在非严格模式中，this会自动指向&lt;em&gt;window&lt;/em&gt;。&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="前端" scheme="https://guodalei.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="JS" scheme="https://guodalei.github.io/tags/JS/"/>
+    
+  </entry>
+  
+  <entry>
     <title>批量更新减少渲染次数</title>
-    <link href="https://guodalei.github.io/posts/undefined/"/>
-    <id>https://guodalei.github.io/posts/undefined/</id>
+    <link href="https://guodalei.github.io/posts/40025/"/>
+    <id>https://guodalei.github.io/posts/40025/</id>
     <published>2023-09-06T12:31:17.000Z</published>
-    <updated>2023-09-07T12:34:51.188Z</updated>
+    <updated>2023-09-11T01:43:44.576Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h3&gt;&lt;p&gt;React 18 增加了一个新的优化特性，在代码中无需手动处理，就可以支持更多场景下的批量更新</summary>
-        
-      
+    <summary type="html">&lt;h3 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h3&gt;&lt;p&gt;React 18 增加了一个新的优化特性，在代码中无需手动处理，就可以支持更多场景下的批量更新 (batching)。本文将说明什么是批量更新，在 React 18 版本以前它是如何工作的，以及它在 React 18 版本发生了怎样的变化。&lt;/p&gt;
+&lt;h3 id=&quot;什么是批量更新？&quot;&gt;&lt;a href=&quot;#什么是批量更新？&quot; class=&quot;headerlink&quot; title=&quot;什么是批量更新？&quot;&gt;&lt;/a&gt;什么是批量更新？&lt;/h3&gt;&lt;p&gt;批量更新是指 React 将多次 state 更新进行合并处理，最终只进行一次渲染，以获得更好的性能。&lt;/p&gt;
+&lt;p&gt;例如，如果在同一个点击事件中有两个状态更新，React 总是会把它们批量处理成一个重新渲染。如果运行以下代码，我们会看到每次点击时，虽然设置了两次状态，React 也只执行一次渲染：&lt;/p&gt;</summary>
     
     
+    
+    <category term="前端" scheme="https://guodalei.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
     
     
     <category term="react" scheme="https://guodalei.github.io/tags/react/"/>
@@ -44,16 +266,12 @@
     <link href="https://guodalei.github.io/posts/15145/"/>
     <id>https://guodalei.github.io/posts/15145/</id>
     <published>2023-09-06T08:45:50.000Z</published>
-    <updated>2023-09-07T12:34:47.524Z</updated>
+    <updated>2023-09-11T01:43:44.576Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;避免使用扩展操作符传递-props&quot;&gt;&lt;a href=&quot;#避免使用扩展操作符传递-props&quot; class=&quot;headerlink&quot; title=&quot;避免使用扩展操作符传递 props&quot;&gt;&lt;/a&gt;避免使用扩展操作符传递</summary>
-        
-      
+    <summary type="html">&lt;h3 id=&quot;避免使用扩展操作符传递-props&quot;&gt;&lt;a href=&quot;#避免使用扩展操作符传递-props&quot; class=&quot;headerlink&quot; title=&quot;避免使用扩展操作符传递 props&quot;&gt;&lt;/a&gt;避免使用扩展操作符传递 props&lt;/h3&gt;&lt;p&gt;首先，让我们从一个应该避免的反模式开始。除非有明确的理由这样做，否则应该避免在组件树中使用扩展操作符传递 props，比如：{ …props }。&lt;/p&gt;
+&lt;p&gt;通过这种方式传递 props 确实可以更快的编写组件。但这也使得我们很难去定位代码中的 bug。会使我们对编写的组件失去信心，会使得我们重构组件变得更加困难，而且可能会导致出现很难排查的 bug。&lt;/p&gt;
+&lt;h3 id=&quot;将函数参数封装成一个对象&quot;&gt;&lt;a href=&quot;#将函数参数封装成一个对象&quot; class=&quot;headerlink&quot; title=&quot;将函数参数封装成一个对象&quot;&gt;&lt;/a&gt;将函数参数封装成一个对象&lt;/h3&gt;&lt;figure class=&quot;highlight jsx&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;title function_&quot;&gt;sampleFunction&lt;/span&gt; = (&lt;span class=&quot;params&quot;&gt;&amp;#123; param1, param2, param3 &amp;#125;&lt;/span&gt;) =&amp;gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;variable language_&quot;&gt;console&lt;/span&gt;.&lt;span class=&quot;title function_&quot;&gt;log&lt;/span&gt;(&amp;#123; param1, param2, param3 &amp;#125;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
     
     
     
@@ -69,16 +287,10 @@
     <link href="https://guodalei.github.io/posts/39576/"/>
     <id>https://guodalei.github.io/posts/39576/</id>
     <published>2023-09-06T08:45:37.000Z</published>
-    <updated>2023-09-07T12:34:44.066Z</updated>
+    <updated>2023-09-11T01:43:44.576Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;条件渲染&quot;&gt;&lt;a href=&quot;#条件渲染&quot; class=&quot;headerlink&quot; title=&quot;条件渲染&quot;&gt;&lt;/a&gt;条件渲染&lt;/h3&gt;&lt;figure class=&quot;highlight jsx&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td</summary>
-        
-      
+    <summary type="html">&lt;h3 id=&quot;条件渲染&quot;&gt;&lt;a href=&quot;#条件渲染&quot; class=&quot;headerlink&quot; title=&quot;条件渲染&quot;&gt;&lt;/a&gt;条件渲染&lt;/h3&gt;&lt;figure class=&quot;highlight jsx&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;27&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;title class_&quot;&gt;React&lt;/span&gt;, &amp;#123; useState &amp;#125; &lt;span class=&quot;keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&amp;#x27;react&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// 两个条件的条件渲染&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;title function_&quot;&gt;ConditionalRenderingWhenTrueBad&lt;/span&gt; = (&lt;span class=&quot;params&quot;&gt;&lt;/span&gt;) =&amp;gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;const&lt;/span&gt; [showConditionalText, setShowConditionalText] = &lt;span class=&quot;title function_&quot;&gt;useState&lt;/span&gt;(&lt;span class=&quot;literal&quot;&gt;false&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;title function_&quot;&gt;handleClick&lt;/span&gt; = (&lt;span class=&quot;params&quot;&gt;&lt;/span&gt;) =&amp;gt; &lt;span class=&quot;title function_&quot;&gt;setShowConditionalText&lt;/span&gt;(&lt;span class=&quot;function&quot;&gt;(&lt;span class=&quot;params&quot;&gt;showConditionalText&lt;/span&gt;) =&amp;gt;&lt;/span&gt; !showConditionalText)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; (&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&lt;span class=&quot;language-xml&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;language-xml&quot;&gt;			&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;button&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;onClick&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&amp;#123;handleClick&amp;#125;&lt;/span&gt;&amp;gt;&lt;/span&gt;Toggle the text&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;button&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;language-xml&quot;&gt;			&amp;#123;showConditionalText ? &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;p&lt;/span&gt;&amp;gt;&lt;/span&gt;The condition must be true!&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;p&lt;/span&gt;&amp;gt;&lt;/span&gt; : null&amp;#125;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;language-xml&quot;&gt;		&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// 一个条件的条件渲染&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;title function_&quot;&gt;ConditionalRenderingWhenTrueGood&lt;/span&gt; = (&lt;span class=&quot;params&quot;&gt;&lt;/span&gt;) =&amp;gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;const&lt;/span&gt; [showConditionalText, setShowConditionalText] = &lt;span class=&quot;title function_&quot;&gt;useState&lt;/span&gt;(&lt;span class=&quot;literal&quot;&gt;false&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;title function_&quot;&gt;handleClick&lt;/span&gt; = (&lt;span class=&quot;params&quot;&gt;&lt;/span&gt;) =&amp;gt; &lt;span class=&quot;title function_&quot;&gt;setShowConditionalText&lt;/span&gt;(&lt;span class=&quot;function&quot;&gt;(&lt;span class=&quot;params&quot;&gt;showConditionalText&lt;/span&gt;) =&amp;gt;&lt;/span&gt; !showConditionalText)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; (&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&lt;span class=&quot;language-xml&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;language-xml&quot;&gt;			&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;button&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;onClick&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&amp;#123;handleClick&amp;#125;&lt;/span&gt;&amp;gt;&lt;/span&gt;Toggle the text&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;button&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;language-xml&quot;&gt;			&amp;#123;showConditionalText &amp;amp;&amp;amp; &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;p&lt;/span&gt;&amp;gt;&lt;/span&gt;The condition must be true!&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;p&lt;/span&gt;&amp;gt;&lt;/span&gt;&amp;#125;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;language-xml&quot;&gt;		&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
     
     
     
