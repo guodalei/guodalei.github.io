@@ -6,7 +6,7 @@
   <link href="https://guodalei.github.io/atom.xml" rel="self"/>
   
   <link href="https://guodalei.github.io/"/>
-  <updated>2023-09-11T01:43:44.560Z</updated>
+  <updated>2023-09-12T02:44:56.245Z</updated>
   <id>https://guodalei.github.io/</id>
   
   <author>
@@ -15,6 +15,21 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>react 18 撕裂</title>
+    <link href="https://guodalei.github.io/posts/undefined/"/>
+    <id>https://guodalei.github.io/posts/undefined/</id>
+    <published>2023-09-12T02:44:36.000Z</published>
+    <updated>2023-09-12T02:44:56.245Z</updated>
+    
+    
+    
+    
+    
+    <category term="react" scheme="https://guodalei.github.io/tags/react/"/>
+    
+  </entry>
   
   <entry>
     <title>css基础知识</title>
