@@ -6,7 +6,7 @@
   <link href="https://guodalei.github.io/atom.xml" rel="self"/>
   
   <link href="https://guodalei.github.io/"/>
-  <updated>2023-09-12T02:44:56.245Z</updated>
+  <updated>2023-09-12T08:26:19.352Z</updated>
   <id>https://guodalei.github.io/</id>
   
   <author>
@@ -17,12 +17,20 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>react 18 撕裂</title>
+    <title>React Hooks useEffect</title>
     <link href="https://guodalei.github.io/posts/undefined/"/>
     <id>https://guodalei.github.io/posts/undefined/</id>
     <published>2023-09-12T02:44:36.000Z</published>
-    <updated>2023-09-12T02:44:56.245Z</updated>
+    <updated>2023-09-12T08:26:19.352Z</updated>
     
+    
+    <summary type="html">&lt;h3 id=&quot;useEffect-简介&quot;&gt;&lt;a href=&quot;#useEffect-简介&quot; class=&quot;headerlink&quot; title=&quot;useEffect 简介&quot;&gt;&lt;/a&gt;&lt;em&gt;useEffect 简介&lt;/em&gt;&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;1.1 为什么要有 useEffect&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;React Hooks 使得 Functional Component 拥有 Class Component 的特性，其主要动机包括：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;在组件之间复用状态逻辑很难&lt;/li&gt;
+&lt;li&gt;复杂组件变得难以理解&lt;/li&gt;
+&lt;li&gt;难以理解的 class&lt;br&gt;对于第二点，首先，针对 Class Component 来说，我们写 React 应用时经常要在组件的各种生命周期中编写代码，如在 &lt;code&gt;componentDidMount&lt;/code&gt; 和 &lt;code&gt;componentDidUpdate&lt;/code&gt; 中发送 HTTP 请求、事件绑定、甚至做一些额外的逻辑，使得业务逻辑扎堆在组件的生命周期函数中。在这个时候，我们的编程思路是“在组件装载完毕时我们需要做什么”、“在组件更新时我们需要做什么”，这使得 React 开发成为了&lt;strong&gt;面向生命周期编程&lt;/strong&gt;，而我们在生命周期中写的那些逻辑，则成了组件生命周期函数的&lt;strong&gt;副作用&lt;/strong&gt;。&lt;br&gt;其次，面向生命周期编程会导致业务逻辑散乱在各生命周期函数里。比如，我们在 componentDidMount 进行的事件绑定又需要在 componentDidUnmount 解绑，那事件管理的逻辑就不统一，代码零散 review 起来会比较麻烦：&lt;/li&gt;
+&lt;/ol&gt;</summary>
     
     
     
