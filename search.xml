@@ -664,4 +664,48 @@
         <tag>设计模式</tag>
       </tags>
   </entry>
+  <entry>
+    <title></title>
+    <url>/posts/0/</url>
+    <content><![CDATA[<h3 id="基础篇"><a href="#基础篇" class="headerlink" title="基础篇"></a>基础篇</h3><hr>
+<ol>
+<li><h3 id="说明：创建数据库"><a href="#说明：创建数据库" class="headerlink" title="说明：创建数据库"></a>说明：创建数据库</h3><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> DATABASE dbname</span><br></pre></td></tr></table></figure>
+</li>
+<li><h3 id="说明：删除数据库"><a href="#说明：删除数据库" class="headerlink" title="说明：删除数据库"></a>说明：删除数据库</h3><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">drop</span> databse dbname</span><br></pre></td></tr></table></figure>
+
+
+</li>
+<li><h3 id="说明：创建新表"><a href="#说明：创建新表" class="headerlink" title="说明：创建新表"></a>说明：创建新表</h3><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> tablename(col1 type1 [<span class="keyword">not</span> <span class="keyword">null</span>] [<span class="keyword">primary</span> key],col2 type2 [<span class="keyword">not</span> <span class="keyword">null</span>],..)</span><br></pre></td></tr></table></figure>
+</li>
+<li><h3 id="说明：删除新表"><a href="#说明：删除新表" class="headerlink" title="说明：删除新表"></a>说明：删除新表</h3><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">drop</span> <span class="keyword">table</span> tablename</span><br></pre></td></tr></table></figure>
+</li>
+<li><h3 id="说明：增加一个列"><a href="#说明：增加一个列" class="headerlink" title="说明：增加一个列"></a>说明：增加一个列</h3><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">Alter</span> <span class="keyword">table</span> tablename <span class="keyword">add</span> <span class="keyword">column</span> col type</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p><strong>注：</strong>列增加后将不能删除。<code>DB2</code> 中列加上后数据类型也不能改变，唯一能改变的是增加 <code>varchar </code>类型的长度。</p>
+</blockquote>
+</li>
+<li><h3 id="说明：添加主键"><a href="#说明：添加主键" class="headerlink" title="说明：添加主键"></a>说明：添加主键</h3><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">Alter</span> <span class="keyword">table</span> tablename <span class="keyword">add</span> <span class="keyword">primary</span> key(col)</span><br><span class="line"><span class="comment">-- 删除主键</span></span><br><span class="line"><span class="keyword">Alter</span> <span class="keyword">table</span> tablename <span class="keyword">drop</span> <span class="keyword">primary</span> key(col)</span><br></pre></td></tr></table></figure>
+</li>
+<li><h3 id="说明：创建索引"><a href="#说明：创建索引" class="headerlink" title="说明：创建索引"></a>说明：创建索引</h3><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">create</span> [<span class="keyword">unique</span>] index idxname <span class="keyword">on</span> tablename(col...)</span><br></pre></td></tr></table></figure>
+</li>
+<li><h3 id="说明：删除索引"><a href="#说明：删除索引" class="headerlink" title="说明：删除索引"></a>说明：删除索引</h3><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">DROP</span> INDEX index_name <span class="keyword">ON</span> table_name</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p><strong>注：</strong>索引是不可更改的，想更改必须删除重新建。</p>
+</blockquote>
+</li>
+<li><h3 id="说明：创建视图"><a href="#说明：创建视图" class="headerlink" title="说明：创建视图"></a>说明：创建视图</h3><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">view</span> viewnamee <span class="keyword">as</span> <span class="keyword">select</span> statement</span><br><span class="line"><span class="comment">--删除视图</span></span><br><span class="line"><span class="keyword">drop</span> <span class="keyword">view</span> viewname</span><br></pre></td></tr></table></figure>
+</li>
+<li><h3 id="说明：几个基本的sql语句"><a href="#说明：几个基本的sql语句" class="headerlink" title="说明：几个基本的sql语句"></a>说明：几个基本的sql语句</h3><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="comment">-- 选择</span></span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> tablename <span class="keyword">where</span> 范围</span><br><span class="line"><span class="comment">-- 插入</span></span><br><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> tablename(field1,field2) <span class="keyword">values</span> (value1,value2)</span><br><span class="line"><span class="comment">-- 删除</span></span><br><span class="line"><span class="keyword">delete</span> <span class="keyword">from</span> tablename <span class="keyword">where</span> 范围</span><br><span class="line"><span class="comment">-- 更新</span></span><br><span class="line"><span class="keyword">update</span> tablename <span class="keyword">set</span> field1<span class="operator">=</span>value1 <span class="keyword">where</span> 范围</span><br><span class="line"><span class="comment">-- 查找</span></span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> tablename <span class="keyword">where</span> field1 link <span class="string">&#x27;%value1%&#x27;</span></span><br><span class="line"><span class="comment">-- 排序</span></span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> tablename <span class="keyword">order</span> <span class="keyword">by</span> field1,field2 [<span class="keyword">desc</span>]</span><br><span class="line"><span class="comment">-- 总数</span></span><br><span class="line"><span class="keyword">select</span> count <span class="keyword">as</span> totalcount <span class="keyword">from</span> tablename</span><br><span class="line"><span class="comment">-- 求和</span></span><br><span class="line"><span class="keyword">select</span> <span class="built_in">sum</span>(field1) <span class="keyword">as</span> sumvalue <span class="keyword">from</span> tablename</span><br><span class="line"><span class="comment">-- 平均</span></span><br><span class="line"><span class="keyword">select</span> <span class="built_in">avg</span>(field1) <span class="keyword">as</span> avgvalue <span class="keyword">from</span> tablename</span><br><span class="line"><span class="comment">-- 最大</span></span><br><span class="line"><span class="keyword">select</span> <span class="built_in">max</span>(field1) <span class="keyword">as</span> maxvalue <span class="keyword">from</span> tablename</span><br><span class="line"><span class="comment">-- 最小</span></span><br><span class="line"><span class="keyword">select</span> <span class="built_in">min</span>(field1) <span class="keyword">as</span> minvalue <span class="keyword">from</span> tablename</span><br></pre></td></tr></table></figure>
+</li>
+<li></li>
+</ol>
+]]></content>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/posts/1/</url>
+    <content><![CDATA[]]></content>
+  </entry>
 </search>
