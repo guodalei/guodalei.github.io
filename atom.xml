@@ -6,7 +6,7 @@
   <link href="https://guodalei.github.io/atom.xml" rel="self"/>
   
   <link href="https://guodalei.github.io/"/>
-  <updated>2023-12-14T03:08:56.127Z</updated>
+  <updated>2023-09-13T10:25:59.586Z</updated>
   <id>https://guodalei.github.io/</id>
   
   <author>
@@ -15,42 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title></title>
-    <link href="https://guodalei.github.io/posts/1/"/>
-    <id>https://guodalei.github.io/posts/1/</id>
-    <published>2023-12-14T02:32:33.206Z</published>
-    <updated>2023-12-14T03:08:56.127Z</updated>
-    
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="https://guodalei.github.io/posts/0/"/>
-    <id>https://guodalei.github.io/posts/0/</id>
-    <published>2023-12-07T06:22:45.609Z</published>
-    <updated>2023-12-14T03:08:56.122Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;基础篇&quot;&gt;&lt;a href=&quot;#基础篇&quot; class=&quot;headerlink&quot; title=&quot;基础篇&quot;&gt;&lt;/a&gt;基础篇&lt;/h3&gt;&lt;hr&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;h3 id=&quot;说明：创建数据库&quot;&gt;&lt;a href=&quot;#说明：创建数据库&quot;</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
   
   <entry>
     <title>nginx操作流程</title>
@@ -75,6 +39,33 @@
     
     
     <category term="nginx" scheme="https://guodalei.github.io/tags/nginx/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>mySql操作流程</title>
+    <link href="https://guodalei.github.io/posts/44543/"/>
+    <id>https://guodalei.github.io/posts/44543/</id>
+    <published>2023-09-13T09:28:10.000Z</published>
+    <updated>2024-03-13T07:59:34.619Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;基础篇&quot;&gt;&lt;a href=&quot;#基础篇&quot; class=&quot;headerlink&quot; title=&quot;基础篇&quot;&gt;&lt;/a&gt;基础篇&lt;/h3&gt;&lt;hr&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;h3 id=&quot;说明：创建数据库&quot;&gt;&lt;a href=&quot;#说明：创建数据库&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="nginx" scheme="https://guodalei.github.io/categories/nginx/"/>
+    
+    
+    <category term="Sql" scheme="https://guodalei.github.io/tags/Sql/"/>
     
   </entry>
   
